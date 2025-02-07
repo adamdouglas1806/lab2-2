@@ -7,10 +7,6 @@ public class HWUPerson extends Person{
 		return ID;
 	}
 	
-	public void setID(String ID) {
-		this.ID = ID;
-	}
-	
 	public HWUPerson(String firstName, String surname) {
 		super(firstName, surname);
 		

@@ -67,9 +67,11 @@ public class Run {
 		System.out.println("");
 		courseTwo.printSummary();
 		
-		HWUStudent studentMember = new HWUStudent("Steve", "Apple", 4);
-		courseOne.addStudent(studentMember);
-		courseOne.removeStudent(studentMember.getHNumber());
+		HWUStudent studentMemberOne = new HWUStudent("Steve", "Apple", 4);
+		HWUStudent studentMemberTwo = new HWUStudent("Bruce", "Wayne", 4);
+		courseOne.addStudent(studentMemberOne);
+		courseOne.addStudent(studentMemberTwo);
+		courseOne.removeStudent(studentMemberOne.getHNumber());
 		
 		courseTwo.addObserver(new HWUStaff("Lucas", "Gold"));
 		

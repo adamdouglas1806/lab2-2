@@ -5,9 +5,9 @@ public class Course {
 
 	private String title;
 	private int year;
-	HWUStaff courseLeader;
-	ArrayList<HWUStudent> students = new ArrayList<HWUStudent>();
-	ArrayList<HWUPerson> observers = new ArrayList<HWUPerson>();
+	private HWUStaff courseLeader;
+	private ArrayList<HWUStudent> students;
+	private ArrayList<HWUPerson> observers;
 	
 	public HWUStaff getCourseLeader() {
 		return courseLeader;
@@ -21,6 +21,8 @@ public class Course {
 		this.courseLeader = courseLeader;
 		this.title = title;
 		this.year = year;
+		students = new ArrayList<HWUStudent>();
+		observers = new ArrayList<HWUPerson>();
 	}
 	
 	public void addStudent(HWUStudent student) {

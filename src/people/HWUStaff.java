@@ -17,10 +17,6 @@ public class HWUStaff extends HWUPerson{
 		return officeAllocate;
 	}
 	
-	public void setOffices(String[] offices) {
-		this.offices = offices;
-	}
-	
 	public String getInfo() {
 		String officeName = super.getInfo()+" Office: "+officeAllocate;
 		return officeName;
